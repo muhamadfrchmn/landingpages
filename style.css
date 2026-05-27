@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    background-color: #fafaf7;
+    color: #2d2d2d;
+    line-height: 1.6;
+}
+
+/* ===== HERO ===== */
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.4)
+    ), url("images/hero.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 48px;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.navbar a:hover {
+    opacity: 1;
+}
+
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 48px 24px;
+}
+
+.hero-label {
+    font-size: 0.8rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    opacity: 0.75;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+
+.hero-sub {
+    font-size: 1.1rem;
+    opacity: 0.85;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    max-width: 560px;
+}
+
+/* ===== TOMBOL ===== */
+.btn-primary {
+    display: inline-block;
+    padding: 14px 36px;
+    background-color: #c8860a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #a06c08;
+    transform: translateY(-2px);
+}
+
+/* ===== SECTION UMUM ===== */
+section {
+    padding: 96px 48px;
+}
+
+.section-header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 64px;
+}
+
+.section-label {
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #c8860a;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    color: #1a1a1a;
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.section-sub {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* ===== KEUNGGULAN ===== */
+.keunggulan-grid {
+    display: flex;
+    gap: 32px;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.keunggulan-card {
+    flex: 1 1 0;
+    min-width: 280px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.keunggulan-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+}
+
+.keunggulan-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.keunggulan-text {
+    padding: 24px;
+}
+
+.keunggulan-text h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.keunggulan-text p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* ===== MENU ===== */
+.section-dark {
+    background-color: #1a1a1a;
+}
+
+.section-dark .section-header h2 {
+    color: #ffffff;
+}
+
+.section-dark .section-sub {
+    color: #aaa;
+}
+
+.menu-wrapper {
+    display: flex;
+    gap: 64px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-image {
+    flex: 1 1 0;
+    min-width: 280px;
+}
+
+.menu-image img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    height: 480px;
+}
+
+.menu-list {
+    flex: 1 1 0;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.menu-item h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.menu-item p {
+    color: #aaa;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* ===== RESORT ===== */
+.resort-grid {
+    display: flex;
+    gap: 32px;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.resort-card {
+    flex: 1 1 0;
+    min-width: 280px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.resort-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+}
+
+.resort-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.resort-info {
+    padding: 24px;
+    background: #ffffff;
+}
+
+.resort-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+}
+
+.resort-info p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* ===== CTA ATMOSFER ===== */
+.cta-atmosfer {
+    min-height: 500px;
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.5)
+    ), url('images/sawah-malam.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.cta-content {
+    max-width: 600px;
+    padding: 48px 24px;
+}
+
+.cta-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.cta-content p {
+    font-size: 1.05rem;
+    opacity: 0.85;
+    line-height: 1.8;
+    margin-bottom: 36px;
+}
+
+/* ===== KONTAK ===== */
+.kontak-grid {
+    display: flex;
+    gap: 32px;
+    max-width: 900px;
+    margin: 0 auto 48px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.kontak-item {
+    flex: 1 1 0;
+    min-width: 220px;
+    text-align: center;
+    padding: 32px 24px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+
+.kontak-item h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+
+.kontak-item p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.kontak-cta {
+    text-align: center;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #1a1a1a;
+    color: #888;
+    text-align: center;
+    padding: 48px 24px;
+    font-size: 0.9rem;
+    line-height: 2;
+}
+
+.footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #c8860a;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
