@@ -12,19 +12,6 @@ body {
     line-height: 1.6;
 }
 
-/* ===== HERO ===== */
-.hero {
-    min-height: 100vh;
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.4)
-    ), url("images/makan.jpg") center/cover no-repeat;
-    display: flex;
-    flex-direction: column;
-    color: #ffffff;
-}
-
-/* ===== NAVBAR ===== */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -62,6 +49,17 @@ body {
     color: #c8860a;
 }
 
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.4)
+    ), url("images/makan.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+
 .hero-content {
     flex: 1;
     display: flex;
@@ -96,7 +94,6 @@ body {
     max-width: 560px;
 }
 
-/* ===== TOMBOL ===== */
 .btn-primary {
     display: inline-block;
     padding: 14px 36px;
@@ -115,7 +112,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* ===== SECTION UMUM ===== */
 section {
     padding: 96px 48px;
 }
@@ -149,28 +145,27 @@ section {
     line-height: 1.7;
 }
 
-/* ===== KEUNGGULAN ===== */
 .keunggulan-grid {
     display: flex;
-    gap: 24px; 
-    max-width: 1200px; 
+    gap: 24px;
+    max-width: 1200px;
     margin: 0 auto;
     flex-wrap: wrap;
 }
 
 .keunggulan-card {
     flex: 1 1 0;
-    min-width: 220px; 
+    min-width: 220px;
     border-radius: 12px;
     overflow: hidden;
     background: #ffffff;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
 }
 
 .keunggulan-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
 }
 
 .keunggulan-card img {
@@ -196,25 +191,24 @@ section {
     line-height: 1.7;
 }
 
-/* ===== KEUNGGULAN CARD FEATURED ===== */
 .keunggulan-featured {
     flex: 0 0 100%;
     display: flex;
     flex-direction: row;
     gap: 0;
     min-width: unset;
-    max-height: 260px; 
+    max-height: 260px;
     background: #ffffff;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
 }
 
 .keunggulan-featured img {
-    width: 45%; 
+    width: 45%;
     height: 100%;
     object-fit: cover;
-    object-position: center top; 
+    object-position: center top;
     border-radius: 0;
 }
 
@@ -223,7 +217,7 @@ section {
     flex-direction: column;
     justify-content: center;
     padding: 40px;
-    flex: 1; 
+    flex: 1;
 }
 
 .keunggulan-featured .keunggulan-text h3 {
@@ -236,7 +230,6 @@ section {
     line-height: 1.8;
 }
 
-/* ===== MENU ===== */
 .section-dark {
     background-color: #1a1a1a;
 }
@@ -291,7 +284,6 @@ section {
     line-height: 1.7;
 }
 
-/* ===== RESORT ===== */
 .resort-grid {
     display: flex;
     gap: 32px;
@@ -305,13 +297,13 @@ section {
     min-width: 280px;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
 }
 
 .resort-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
 }
 
 .resort-card img {
@@ -338,12 +330,11 @@ section {
     line-height: 1.7;
 }
 
-/* ===== CTA ATMOSFER ===== */
 .cta-atmosfer {
     min-height: 500px;
     background: linear-gradient(
-        rgba(0,0,0,0.6),
-        rgba(0,0,0,0.5)
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.5)
     ), url('images/CTA.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
@@ -371,52 +362,6 @@ section {
     margin-bottom: 36px;
 }
 
-/* ===== KONTAK SECTION BACKGROUND ===== */
-.kontak-tagline {
-    text-align: center;
-    margin-bottom: 24px;
-}
-
-.kontak-tagline p:first-child {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #1a1a1a;
-    margin-bottom: 8px;
-}
-
-.kontak-tagline p:last-child {
-    color: #666;
-    font-size: 0.95rem;
-}
-
-.btn-wa {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    padding: 16px 40px;
-    background-color: #25d366;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 50px;
-    font-weight: 600;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
-    align-self: flex-start; /* ← tombol tidak full width */
-}
-
-.btn-wa:hover {
-    background-color: #1da851;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
-}
-
-.wa-icon {
-    width: 24px;
-    height: 24px;
-}
-
-/* ===== KONTAK BARU ===== */
 #kontak {
     background-color: #fdf6ed;
     padding: 0;
@@ -425,16 +370,16 @@ section {
 .kontak-wrapper {
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch; 
+    align-items: stretch;
 }
 
 .kontak-left {
     flex: 1 1 0;
     min-width: 320px;
-    padding: 80px 48px; 
+    padding: 80px 48px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     gap: 24px;
 }
 
@@ -482,6 +427,8 @@ section {
     background: #ffffff;
     border-radius: 12px;
     border-left: 4px solid #c8860a;
+    text-align: center;
+    margin-bottom: 24px;
 }
 
 .kontak-tagline p:first-child {
@@ -496,6 +443,33 @@ section {
     font-size: 0.9rem;
 }
 
+.btn-wa {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 40px;
+    background-color: #25d366;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
+    align-self: flex-start;
+}
+
+.btn-wa:hover {
+    background-color: #1da851;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+}
+
+.wa-icon {
+    width: 24px;
+    height: 24px;
+}
+
 .kontak-right {
     flex: 1 1 0;
     min-width: 320px;
@@ -507,15 +481,14 @@ section {
 
 .kontak-right iframe {
     width: 100%;
-    height: 100%; /* ← ganti dari 420px ke 100% */
-    min-height: 420px; /* ← tetap ada minimum */
+    height: 100%;
+    min-height: 420px;
     border: 0;
     display: block;
     border-radius: 16px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
 }
 
-/* ===== FOOTER ===== */
 footer {
     background-color: #111111;
     color: #888;
@@ -619,17 +592,11 @@ footer {
     border-top: 1px solid #222;
     padding: 24px 48px;
     text-align: center;
-    max-width: 100%;
     color: #444;
     font-size: 0.85rem;
 }
 
-/* ===================================
-   MEDIA QUERIES — MOBILE (max 768px)
-=================================== */
 @media (max-width: 768px) {
-
-    /* ===== NAVBAR ===== */
     .navbar {
         padding: 12px 16px;
     }
@@ -646,7 +613,6 @@ footer {
         font-size: 0.8rem;
     }
 
-    /* ===== HERO ===== */
     .hero-content h1 {
         font-size: 2.2rem;
     }
@@ -655,7 +621,6 @@ footer {
         font-size: 0.95rem;
     }
 
-    /* ===== SECTION UMUM ===== */
     section {
         padding: 64px 24px;
     }
@@ -668,7 +633,6 @@ footer {
         font-size: 1.8rem;
     }
 
-    /* ===== KEUNGGULAN FEATURED ===== */
     .keunggulan-featured {
         flex-direction: column;
         max-height: unset;
@@ -683,7 +647,6 @@ footer {
         padding: 24px;
     }
 
-    /* ===== MENU ===== */
     .menu-wrapper {
         gap: 32px;
     }
@@ -692,7 +655,6 @@ footer {
         height: 280px;
     }
 
-    /* ===== CTA ===== */
     .cta-content h2 {
         font-size: 1.8rem;
     }
@@ -701,7 +663,6 @@ footer {
         font-size: 0.95rem;
     }
 
-    /* ===== KONTAK ===== */
     .kontak-left {
         padding: 48px 24px;
     }
@@ -714,7 +675,6 @@ footer {
         min-height: 300px;
     }
 
-    /* ===== FOOTER ===== */
     .footer-wrapper {
         padding: 48px 24px 32px;
         gap: 32px;
@@ -723,27 +683,6 @@ footer {
     .footer-bottom {
         padding: 24px;
     }
-
-}
-
-/* ===================================
-   MEDIA QUERIES — MOBILE KECIL (max 480px)
-=================================== */
-@media (max-width: 480px) {
-
-    /* Sembunyikan sebagian menu navbar */
-    .navbar ul {
-        gap: 10px;
-    }
-
-    .navbar a {
-        font-size: 0.75rem;
-    }
-
-    .hero-content h1 {
-        font-size: 1.8rem;
-    }
-
 }
 
 @media (max-width: 480px) {
@@ -762,5 +701,9 @@ footer {
     .navbar a {
         font-size: 0.7rem;
         letter-spacing: 0;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
     }
 }
